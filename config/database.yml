@@ -64,6 +64,7 @@ test:
   username: ubuntu
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   host: localhost
+  port: 5432
   database: circle_ruby_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
