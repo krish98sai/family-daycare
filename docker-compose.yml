@@ -6,7 +6,7 @@ services:
   web:
     build:
       context: ./
-      dockerfile: /Dockerfile
+      dockerfile: Dockerfile
     command: bash -c "rm -f /web/tmp/pids/server.pid; rails db:create; rails db:migrate; rails s -p 80 -b 'web'"
     volumes:
       - ./:/web
